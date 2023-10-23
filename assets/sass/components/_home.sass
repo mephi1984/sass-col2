@@ -1,0 +1,40 @@
+.home
+    background-color: var(--home-bg-color)
+    padding-top: 8.625rem
+    top: 3rem
+
+    @media screen and (max-width: 768px)
+        padding-top: 15rem
+
+    &__container
+        display: flex
+        @media screen and (max-width: 768px)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+    &__data
+        display: flex
+        align-items: flex-start
+        flex-direction: column
+        justify-content: center
+
+    &__subtitle
+        font-size: var(--large-font-size)
+        font-weight: var(--font-light)
+
+    &__title
+        font-size: var(--largest-font-size)
+        margin-bottom: 3.5rem
+
+    &__btn
+        @include btn()
+        color: var(--text-color-light)
+        padding: 1rem 1.875rem
+        font-size: var(--normal-font-size)
+
+    .slider
+        text-align: center
+        margin-top: 8rem
+        padding-bottom: 4.3rem

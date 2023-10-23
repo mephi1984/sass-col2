@@ -1,0 +1,30 @@
+.models
+    margin-top: var(--mb-1-5)
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 17rem
+
+    &__title
+        font-size: var(--large-font-size)
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: var(--mb-6)
+
+    &__items
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-bottom: var(--mb-6)
+
+        @media screen and (max-width: 768px)
+            display: flex
+            justify-content: space-around
+
+    &__button
+        @include btn()
+        padding: 1.125rem 2rem
+        max-width: 220px
+        text-align: center
+        color: white
+        font-weight: var(--font-light)

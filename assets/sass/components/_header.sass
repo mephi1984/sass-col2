@@ -1,0 +1,51 @@
+/*=============HEADER=======================*/
+.header
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    padding-top: 3.125rem
+    font-size: var(--small-font-size)
+    height: var(--header-height)
+    background-color: var(--home-bg-color)
+
+    @media screen and (max-width: 768px)
+        font-size: var(--normal-font-size)
+
+/*=============NAVBAR=======================*/
+.nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: var(--text-color)
+    background-color: var(--home-bg-color)
+
+    @media screen and (max-width: 768px)
+        display: flex
+        flex-direction: column
+        gap: 0.9rem
+
+    &__list
+        display: flex
+        gap: 2.19rem
+
+    &__link
+        color: var(--text-color)
+
+    &__icon
+        padding-left: 0.375rem
+        margin-bottom: 4px
+
+    &__logo
+        display: flex
+        align-items: center
+        margin: 0 5.625rem
+        gap: 1.25rem
+        font-weight: var(--font-bold)
+        font-size: var(--h2-font-size)
+
+    &__icons
+        margin-left: 6.25rem
+        cursor: pointer
+        @media screen and (max-width: 830px)
+            margin-left: 2.5rem

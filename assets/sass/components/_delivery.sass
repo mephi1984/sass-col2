@@ -1,0 +1,47 @@
+.delivery
+    background-color: var(--text-color)
+    color: var(--text-color-light)
+    height: 15rem
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: var(--h2-font-size)
+    padding: 0 1rem
+
+    &__title
+        line-height: 2rem
+
+    &__light
+        font-weight: var(--font-light)
+
+    &__info
+        margin-top: 1.3rem
+        font-weight: var(--font-light)
+        line-height: 1.7rem
+
+    &__last
+       display: flex
+       @media screen and (max-width: 768px)
+        flex-direction: column
+        justify-content: center
+        align-self: center
+        gap: var(--mb-1)
+        text-align: center
+
+    &__input
+        margin-left: 3.75rem
+        max-width: 255px
+        height: 2.5rem
+        padding-left: 1.25rem
+        @media screen and (max-width: 768px)
+            margin-left: 0
+
+    &__btn
+        @include btn()
+        max-width: 185px
+        font-size: var(--small-font-size)
+        height: 2.5rem
+        margin-left: var(--mb-2)
+        @media screen and (max-width: 768px)
+            margin-left: 0
